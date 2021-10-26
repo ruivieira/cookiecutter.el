@@ -25,6 +25,15 @@
   (interactive)
 (cookiecutter--run-make-target "data"))
 
+(defun cookiecutter-ds-features ()
+  "Create the features for this project"
+  (interactive)
+  (cookiecutter--run-make-target "features"))
+
+(defun cookiecutter-ds-train ()
+  "Train the model for this project"
+  (interactive)
+  (cookiecutter--run-make-target "train"))
 
 (provide 'cookiecutter)
 ;;; cookiecutter.el ends here
